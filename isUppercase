@@ -1,0 +1,3 @@
+int isUppercase(int c) {
+return isupper(c);
+}
