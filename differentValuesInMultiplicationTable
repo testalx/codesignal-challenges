@@ -1,0 +1,10 @@
+int differentValuesInMultiplicationTable(int n, int m) {
+vector<int>vc(401,0);
+for(int i=1;i<=n;i++)
+    for(int j=1;j<=m;j++)
+        vc[i*j]++;
+int k=0;
+for(int x=0;x<401;x++)
+    if(vc[x]) k++;
+return k;
+}
