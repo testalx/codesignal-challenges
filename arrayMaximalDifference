@@ -1,0 +1,11 @@
+int x,arrayMaximalDifference(vector<int> v) {
+for(int i:v)
+    for(int j:v)
+        x=max(x,i-j);
+return x;
+}
+/*int arrayMaximalDifference(auto a) {
+    sort(&a[0], &*end(a));
+    return a.back() - a[0];
+}
+*/
