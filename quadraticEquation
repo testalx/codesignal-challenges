@@ -1,0 +1,12 @@
+std::vector<double> quadraticEquation(int a, int b, int c) {
+vector<double> v;
+double d=b*b-4*a*c;
+if(d<0) return v;
+d=sqrt(d);
+v.push_back((-b-d)/2/a);
+if(!d) return v;
+v.push_back((-b+d)/2/a);
+if(a<0)
+    reverse(v.begin(),v.end());
+return v;
+}
