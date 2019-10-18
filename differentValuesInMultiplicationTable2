@@ -1,0 +1,15 @@
+int i,differentValuesInMultiplicationTable2(int n, int m) {
+set<int>a;
+/*
+for(++i;i<=n;i++)
+        for(j=1;j<=m;)
+       // {cout<<"\ni="<<i<<" j="<<j;
+                a.insert(i*j++);
+       // }
+      
+ */
+for(;n;n--)
+ for(i=m;i;)
+  a.insert(n*i--);
+return size(a);
+}
