@@ -1,0 +1,11 @@
+int calculationsWithCoins(int a, int b, int c) {
+set<int> v;
+v.insert(a);
+v.insert(b);
+v.insert(c);
+v.insert(a+b);
+v.insert(c+b);
+v.insert(a+c);
+v.insert(a+b+c);
+return v.size();
+}
