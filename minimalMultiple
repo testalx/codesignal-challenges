@@ -1,0 +1,8 @@
+int minimalMultiple(int d, int a) {
+/*54
+for(;a++%d;);
+return a-1;
+*/
+//51
+return a%d?a/d*d+d:a;
+}
