@@ -1,0 +1,7 @@
+int x=1,smallestNumber(int n) {
+//int x=1;
+if(n<2)return 0;
+while(n--)
+    x*=10;
+return x/10;
+}
