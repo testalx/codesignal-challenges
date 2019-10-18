@@ -1,0 +1,14 @@
+vector<int> v,zFunctionNaive(auto s) {
+int n=size(s),i,j,k;
+for(;i<n;i++)
+{
+    k=0;j=0;
+    while(j<n&&s[j++]==s[i+k])
+    //{
+   // cout<<"\nam comparat "<<s[j]<<" cu "<<s[i+k];
+    k++;
+   // }
+    v.push_back(k);
+}
+return v;
+}
