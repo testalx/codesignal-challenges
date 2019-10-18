@@ -1,0 +1,26 @@
+int e(auto s)
+{ //cout<<"\nverificam sirul "<<s; 
+string t=s;
+reverse(begin(s),end(s));
+return t==s;
+/* 
+n=size(s);
+ for(i=0;i<n;i++)
+  if(s[i]!=s[n-1-i]) return 0;
+return 1;   
+*/
+}
+
+int j,k,n,isOneSwapEnough(auto s) {
+if( e(s) ) return 1;
+
+for(n=size(s);j<n-1;)
+ for(k=j+1;k<n;)
+ {
+  swap(s[j],s[k]);
+ if(e(s)) return 1;
+ swap(s[j++],s[k++]);
+}
+
+return 0;
+}
