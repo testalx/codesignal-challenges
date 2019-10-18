@@ -1,0 +1,5 @@
+int x,p=1,checkFactorial(int n) {
+for(;p<n;)
+p*=++x;
+return p==n;
+}
