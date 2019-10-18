@@ -1,0 +1,9 @@
+int x,d,c,factorialTrailingZeros(int n) {
+while(n)
+{
+    x=n--;
+    while(x%2<1) x/=2,d++;
+    while(x%5<1) x/=5,c++;
+}
+return d<c?d:c;
+}
