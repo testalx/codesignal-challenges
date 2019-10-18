@@ -1,0 +1,14 @@
+int i,k;
+string a,lookAndSaySequenceNextElement(auto s) {
+while(i<size(s))
+{
+//  c=s[i];
+k=1;
+//cout<<"\ncaracterul "<<c;
+  while(s[i]==s[++i]) k++;
+  a+=k+48;
+  a+=s[i-1];
+     
+}
+return a;
+}
