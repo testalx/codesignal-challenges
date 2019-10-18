@@ -1,0 +1,9 @@
+int x,lastDigit(int a, int b) {
+if(!b)return 1;
+for(x=a%10;--b;)
+//{    
+a=a%10*x%10;
+//cout<<a<<' ';
+//}
+return a;
+}
