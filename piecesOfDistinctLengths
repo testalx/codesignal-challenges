@@ -1,0 +1,4 @@
+int k,piecesOfDistinctLengths(int n) {
+for(;k*++k/2<=n;);
+return k-2;
+}
