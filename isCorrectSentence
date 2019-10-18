@@ -1,0 +1,4 @@
+int isCorrectSentence(auto s) {
+//cout<<s[size(s)-1]<<isupper(s[0]);
+return isupper(s[0])&&s[size(s)-1]==46;
+}
