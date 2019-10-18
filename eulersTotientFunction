@@ -1,0 +1,5 @@
+int k,i,eulersTotientFunction(int n) {
+while(++i<=n)
+    k+=gcd(n,i)<2;
+return k;
+}
