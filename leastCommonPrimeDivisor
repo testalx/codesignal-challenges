@@ -1,0 +1,7 @@
+int leastCommonPrimeDivisor(int a, int b) {
+if(!(a&1)&&!(b&1)) return 2;
+int d=2;
+while(++d<=min(a,b))
+    if(a%d==0&b%d==0) return d;
+return -1;
+}
