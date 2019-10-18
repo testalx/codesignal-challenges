@@ -1,0 +1,15 @@
+int i;
+auto removeDuplicateCharacters(auto s) {
+
+vector<int>v(199,0);
+for(char x:s)
+    v[x]++;
+//cout<<"v:";
+//for(int j=0;j<26;j++) cout<<v[j]<<' ';
+for(;i<size(s);i++)
+    if(v[s[i]]>1) 
+//{
+        s.erase(i--,1);
+//cout<<s<<endl;}
+return s;
+}
