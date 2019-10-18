@@ -1,0 +1,16 @@
+//imprumutata si adaptata sa mai taiem caractere
+int j,i=1,n;
+auto prefixFunctionNaive(auto s) {
+n=size(s);
+vector<int> v(n);
+    //int j = 0;
+    for (; i < n; s[j]-s[i]?:j++,v[i++]=j) 
+//{
+        while (j  & s[j] - s[i])
+            j = v[j-1];
+
+        
+       // p[i] = j;
+   // }   
+    return v;
+}
