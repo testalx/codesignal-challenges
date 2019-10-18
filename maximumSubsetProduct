@@ -1,0 +1,10 @@
+
+int k,m=INT_MIN,maximumSubsetProduct(auto a) {
+for(int x:a)
+//{
+    //cout<<"\nx="<<x;
+    x<0?k++,m=m>x?m:x:x;
+//}
+//cout<<"\nm="<<m<<" k="<<k;
+return k&1&size(a)>1?m:1;
+}
