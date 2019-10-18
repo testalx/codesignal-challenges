@@ -1,0 +1,7 @@
+int a,kthDigit(int n, int k) {
+//x=log10(n)+1;
+//if(x<k) return -1;
+a=n/pow(10,(int)log10(n)+1-k);
+return a>n?-1:a%10;
+
+}
