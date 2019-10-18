@@ -1,0 +1,7 @@
+int a,b=1,c,fibonacciNumber(int n) {
+while(n--)
+
+    c=a+b,a=b,b=c;
+
+return a;
+}
