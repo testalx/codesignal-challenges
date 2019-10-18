@@ -1,0 +1,4 @@
+int rightTriangle(auto v) {
+sort(begin(v),end(v));
+return v[0]*v[0]+v[1]*v[1]==v[2]*v[2];
+}
