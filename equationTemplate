@@ -1,0 +1,9 @@
+int equationTemplate(auto v) {
+sort(begin(v),end(v));
+return 
+v[3]==v[0]*v[1]*v[2] | 
+v[3]*v[2]==v[1]*v[0] | 
+v[3]*v[0]==v[1]*v[2] |
+v[0]==v[1]*v[2]*v[3] |
+v[0]*v[2]==v[1]*v[3];
+}
