@@ -1,0 +1,8 @@
+int k,regularBracketSequence1(auto s) {
+for(int x:s)
+{
+ x-40?k--:k++;
+ if(k<0) return 0;   
+}
+return !k;
+}
