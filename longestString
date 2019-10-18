@@ -1,0 +1,6 @@
+string a,longestString(auto v) {
+    for(auto s:v)
+        size(s)<size(a)?a:a=s;
+return a;
+
+}
