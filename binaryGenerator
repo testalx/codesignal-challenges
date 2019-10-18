@@ -1,0 +1,36 @@
+//vector<string>sol;
+string t;
+int n;
+void f(int p,string s)
+{ //cout<<"\nnivel "<<p;;
+if(p>n)return;
+if(p==n)x.push_back(t);
+// char c='0';
+if(s[p]==48)  //caracterul 0
+{t+="0"; 
+// cout<<"\n\tsirul t este:"<<t;
+//cout<<"\n\tdimensiunea lui t:"<<t.size();   
+// if(n==t.size())
+  // sol.push_back(t);
+// else 
+f(p+1,s);
+t.pop_back();
+// t+="1";
+// cout<<"\n\tsirul t este:"<<t;
+//cout<<"\n\tdimensiunea lui t:"<<t.size();
+//if(n==t.size())
+   //sol.push_back(t);
+ //else 
+//back(p+1,s);
+//t.pop_back();
+}
+//else {
+t+="1";f(p+1,s);t.pop_back();
+//}
+}
+
+vector<string> x,binaryGenerator(auto s) {
+n=s.size();
+f(0,s);
+return x;
+}
