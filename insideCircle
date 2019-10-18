@@ -1,0 +1,3 @@
+int insideCircle(auto p, auto c, int r) {
+return sqrt(pow(p[0]-c[0],2)+pow(p[1]-c[1],2))<=r;
+}
