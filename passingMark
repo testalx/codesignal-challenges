@@ -1,0 +1,8 @@
+double s;
+int passingMark(double a, auto t) {
+//double s=0;
+for(char c:t)
+    s+=70-c;
+s/=t.size();
+return s>=a;
+}
