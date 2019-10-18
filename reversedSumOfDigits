@@ -1,0 +1,37 @@
+#define f t.insert(0,1,
+int k;
+string t,reversedSumOfDigits(int s, int n) {
+if(s>n*9) 
+    return "-1";
+
+if(!s)
+return n<2?"0":"-1";
+while(s)
+{
+
+    if(s>9)
+    {
+        f '9');
+        s-=9;n--;
+        continue;
+    }
+    
+    //acum suma are o cifra. suma e 1+ceva, trebuie 1,n-2 zerouri, apoi ceva-ul
+    if(n<2) //daca nu pot pune zerouri nici 1 la sfarsit
+    
+        return f s+48);
+    
+    //s--;    
+    f s+47);
+    n--;
+    s=0;
+    k=1;
+    while(n-->1)
+    //{
+        f '0');
+        //n--;
+        //k=1;
+   // }
+}
+return k?f '1'):t;
+}
