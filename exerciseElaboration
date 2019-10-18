@@ -1,0 +1,30 @@
+int sc(int x)
+{if(!x) return 0;
+ return x%10+sc(x/10);
+}
+
+int nr(int p,int n)
+{int x=p;
+while(n>=0)
+{x*=10;n--;}
+x+=p;
+return x;
+}
+
+int exerciseElaboration(int p, int n) {
+//suma cifrelor lui p patrat
+int pp=nr(p,n);
+//cout<<"\nnumarul este "<<pp;
+pp=pp*pp;
+if(n<4) return sc(pp);
+int s=0;
+pp=p*p;
+s+=(pp/10+pp%10);
+pp*=2;
+s+=sc(pp);
+pp/=2;
+s+=(pp/10+pp%10);
+return s;
+
+
+}
