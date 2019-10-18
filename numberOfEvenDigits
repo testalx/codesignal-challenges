@@ -1,0 +1,5 @@
+int k,numberOfEvenDigits(int n) {
+for(;n;n/=10)
+    n&1?:k++;
+return k;
+}
