@@ -1,0 +1,26 @@
+int k,s,ballsDistribution(int n, int a, int x) {
+
+/*214
+int bilecur=0,k=0;
+for(;colors;colors--)
+{
+ //cout<<"\nculoarea cu nr. "<<colors;
+ bilecur+=ballsPerColor;
+ //cout<<"\n\tavem "<<bilecur<<" bile care merg in "<<bilecur/boxSize<<" cutii.";
+ if(bilecur/boxSize==0) continue;
+ bilecur%=boxSize;   
+ //cout<<"Raman "<<bilecur<<" bile pt urm cutie care se vor combina cu urm culoare";
+ k+=bilecur||ballsPerColor>boxSize;
+ // k++;
+}
+*/
+//100
+for(;n--;)
+{
+ s+=a;
+ if(s/x<1) continue;
+ s%=x;
+ k+=s||a>x;
+}
+return k;
+}
