@@ -1,0 +1,14 @@
+
+std::vector<std::vector<int>> a,create2DArray(auto w) {
+//vector<int>v;
+for(int x:w)
+{
+//cout<<x<<endl;
+    vector<int>v;
+    for(int j=0;j<x;)
+        v.push_back(j++);
+//cout<<"hau";
+    a.push_back(v);
+}
+return a;
+}
