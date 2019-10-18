@@ -1,0 +1,6 @@
+auto imageTruncation(auto a,int n) {
+for(auto &v:a)
+for(int &x:v)
+n>x?:x=n;
+return a;
+}
