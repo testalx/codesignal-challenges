@@ -1,0 +1,5 @@
+int m=50, arrayMinimumAboveBound(auto v, int a) {
+for(int x:v) 
+m=x>m||x<=a?m:x;
+return m;
+}
