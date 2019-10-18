@@ -1,0 +1,4 @@
+int areSimilarNumbers(int a, int b, int x) {
+//return a%x && b%x || a%x<1 && b%x<1;   //67
+return !(a%x>0 ^ b%x>0);  //59
+}
