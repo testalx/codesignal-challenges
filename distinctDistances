@@ -1,0 +1,4 @@
+int distinctDistances(auto v) {
+//a=v[0],b=v[1],c=v[2];
+return v[2]>v[0]+v[1]?4:3;
+}
