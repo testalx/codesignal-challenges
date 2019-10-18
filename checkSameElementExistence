@@ -1,0 +1,9 @@
+int i,j,checkSameElementExistence(vector<int> a, vector<int> b) {
+//int i=0,j=0;
+while(i<a.size()&j<b.size())
+{if(a[i]==b[j]) return 1;
+    a[i]<b[j]?i++:j++;
+}
+return 0;
+
+}
