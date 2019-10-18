@@ -1,0 +1,4 @@
+int isLuckyNumber(int n) {
+for(;n%10==4|n%10==7;n/=10);
+return !n;
+}
