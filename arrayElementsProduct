@@ -1,0 +1,5 @@
+int p=1,arrayElementsProduct(auto v) {
+for(int x:v)
+    p*=x;
+return p;
+}
