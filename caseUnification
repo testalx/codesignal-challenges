@@ -1,0 +1,9 @@
+int k,K;
+auto caseUnification(auto s) {
+for(int x:s)
+    x>96?k++:K++;
+//cout<<k<<' '<<K;
+for(char &x:s)
+    k>K?x=tolower(x):x=toupper(x);
+return s;
+}
