@@ -1,0 +1,5 @@
+string S,mySubstringByLength(string s, int a, int b) {
+for(;b--;)
+    S+=s[a++];
+return S;
+}
