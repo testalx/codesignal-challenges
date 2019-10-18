@@ -1,0 +1,16 @@
+int i,k,n;
+auto bfsDistancesUnweightedGraph(auto a, int x) {
+n=a.size();
+vector<int> d(n,0),v(n,1);
+queue<int> q;
+q.push(x);
+d[x]=v[x]=0;
+while(size(q))
+{k++;
+ x=q.front();q.pop();   
+ for(i=0;i<n;i++)
+  if(a[x][i]&v[i])
+  {q.push(i);v[i]=0;d[i]=k;}
+}
+return d;
+}
