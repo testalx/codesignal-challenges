@@ -1,0 +1,10 @@
+int k,sameElementsNaive(auto a, auto b) {
+
+for(int x:a)
+//    k+=(find(begin(b),end(b),x)!=end(b));    //93
+for(int y:b)
+    k+=x==y;          //75
+
+return k;
+
+}
