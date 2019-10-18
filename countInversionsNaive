@@ -1,0 +1,7 @@
+int i,j,k,countInversionsNaive(auto v) {
+for(;i<size(v);i++)
+    for(j=i+1;j<size(v);j++)
+        v[i]>v[j]?k++:i;
+
+return k;
+}
