@@ -1,0 +1,12 @@
+int k,firstMultiple(auto v, int a) {
+
+
+while(1)
+{k=1;
+for(int x:v)
+    if(a%x)k=0;
+ if(k) return a;
+a++;
+}
+
+}
