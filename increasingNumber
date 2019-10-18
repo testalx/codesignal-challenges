@@ -1,0 +1,5 @@
+int i,increasingNumber(int x, int n) {
+while(++i<=n)
+    while(x%i) x++;
+return x;
+}
