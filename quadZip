@@ -1,0 +1,18 @@
+std::string quadZip(std::string one, std::string two, std::string three, std::string four) { 
+for(int i=0;i<two.size();i++)
+    if(two[i]=='\\')
+        two.erase(i,1);
+string s;
+while(one.size()||two.size()||three.size()||four.size())
+{
+    if(one.size())
+    {s+=one[0];one.erase(0,1);}
+    if(two.size())
+    {s+=two[0];two.erase(0,1);}
+    if(three.size())
+    {s+=three[0];three.erase(0,1);}
+    if(four.size())
+    {s+=four[0];four.erase(0,1);}
+}
+return s;
+}
