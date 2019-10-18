@@ -1,0 +1,35 @@
+int x,y,z,t,i,largestDistance(auto a) {
+x=y=50;
+//for(;n=a[i],i<size(a);i++)
+/* 162
+    if(i%2)
+        {
+        if(a[i]>t) t=a[i];
+        if(a[i]<y) y=a[i];
+        }
+    else
+{
+        if(a[i]>z) z=a[i];
+        if(a[i]<x) x=a[i];
+    }
+*/
+/* 153
+if(i%2)
+    t>a[i]?:t=a[i],
+    y<a[i]?:y=a[i];
+else    
+    z>a[i]?:z=a[i],
+    x<a[i]?:x=a[i];
+*/
+/* 146
+if(i%2)
+    t=max(t,n),
+    y=min(y,n);
+else
+    z=max(z,n),
+    x=min(x,n);
+*/
+for(int n:a)
+    i%2?(t=max(t,n),y=min(y,n)):(z=max(z,n),x=min(x,n)),i++;
+return max(z-x,t-y);
+}
