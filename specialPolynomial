@@ -1,0 +1,10 @@
+int s,k,p,specialPolynomial(int x, int n) {
+s=1;p=1;
+while(s<=n)
+{
+   p*=x;
+   s+=p;
+   k++; 
+}
+return k-1;
+}
