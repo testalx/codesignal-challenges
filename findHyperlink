@@ -1,0 +1,19 @@
+int i;
+string t,findHyperlink(auto s) {
+//string t;
+/*123
+while(s[++i]!='>');
+//cout<<s[i];
+j=i-1;
+while(j&&s[--j]!='<');
+//cout<<" "<<j;
+j+=8;
+while(++j<i-1) t+=s[j];
+*/
+while(s[i++]-60);  //60 = '<'
+//cout<<s[i];
+//i+=8;
+while(s[i+9]-62) //62='>'
+    t+=s[i+++8];
+return t;
+}
