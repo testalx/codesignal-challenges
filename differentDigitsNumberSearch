@@ -1,0 +1,20 @@
+int a,k,differentDigitsNumberSearch(auto v) {
+for(int x:v)
+{
+    vector<int>v(10,0);
+    a=x;
+    //cout<<"\n\tx="<<a;
+    while(a)
+        v[a%10]++,a/=10;
+    k=1;
+    for(int c:v)
+        c<2?:k=0;
+    if(k) return x;
+   /* k=0;
+    while(v[k]<2)
+        //cout<<"\nk="<<k;
+        k++;
+    if(k==10) return x;*/
+}
+return -1;
+}
