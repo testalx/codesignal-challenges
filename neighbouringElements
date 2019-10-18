@@ -1,0 +1,19 @@
+#define f k+=a[i][j]
+int i,j,k,m,n,neighbouringElements(auto a) {
+m=size(a);n=size(a[0]);
+for(;i<m;i++)
+    for(j=0;j<n;j++)
+   // {cout<<a[i][j]<<' ';
+        i>=m-1?:   //not on the last line
+            f==a[i+1][j],
+        j>=n-1?:   //not on the last column
+            f==a[i][j+1],
+        !i?:      //not on the first line
+            f==a[i-1][j],
+        !j?:      //not on the first column
+            f==a[i][j-1];
+        //k+=(a[i][j]==a[i+1][j]|a[i][j]==a[i][j+1]);
+    //}
+//cout<<"\nk="<<k;
+return k/2;
+}
