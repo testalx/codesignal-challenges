@@ -1,0 +1,5 @@
+string v,myConcat(auto a, auto s) {
+for(string x:a)
+    v+=x+s;
+return v;
+}
