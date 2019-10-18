@@ -1,0 +1,4 @@
+#define f countIncreasingSequences(
+int f int n, int k) {
+return !n?1:n>k?0: f n,k-1)+f n-1,k-1);
+}
