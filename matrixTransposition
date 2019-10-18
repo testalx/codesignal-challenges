@@ -1,0 +1,10 @@
+vector<vector<int>> m, matrixTransposition(auto a) {
+int i,j;
+for(i=0;i<size(a[0]);i++)
+{vector<int>v;
+for(j=0;j<size(a);j++)
+    v.push_back(a[j][i]);
+m.push_back(v);    
+}
+return m;
+}
