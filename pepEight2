@@ -1,0 +1,3 @@
+int pepEight2(auto s) {
+return size(s)<80;
+}
