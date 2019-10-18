@@ -1,0 +1,8 @@
+auto fractionSubtraction(auto a, auto b) {
+int x,y,d,c;
+c=x=a[0]*b[1]-b[0]*a[1];
+d=y=a[1]*b[1];
+while(c-d)
+    c>d?c-=d:d-=c;
+return vector{x/d,y/d};
+}
