@@ -1,0 +1,22 @@
+auto maxSumSegments(auto v) {
+int i,j,s,k,p,m,n=size(v);
+vector<int>x=v;
+for(;k<n;k++)
+{
+    m=-99;
+//cout<<"\nLungimea "<<k<<":";
+    for(i=p=0;i<n-k;i++)
+    {
+        s=0;
+        //cout<<"\n\tPozitia "<<i<<":";
+        for(j=0;j<=k;j++)
+            s+=v[i+j];
+       // cout<<"\tSuma "<<s;
+        m>=s?:(m=s,p=i);   
+    }
+    //x.push_back(p);
+    x[k]=p;
+}
+//x.push_back(0);
+return x;
+}
