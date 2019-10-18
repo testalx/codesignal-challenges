@@ -1,0 +1,14 @@
+int k;
+
+string t,strangeCode(int s, int e) {
+/*95
+for(;s<e-1;s++,e--,k++)
+    t==""?t="a":t+=k&1?"b":"a";   
+*/
+//78
+for(;k++<(e-s)/2;)
+    t+=k&1?"a":"b";
+
+
+return t;
+}
