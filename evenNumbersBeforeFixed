@@ -1,0 +1,8 @@
+int k,evenNumbersBeforeFixed(auto v, int n) {
+for(int x:v)
+{
+if(x==n) return k;
+k+=~x&1;
+}
+return -1;
+}
