@@ -1,0 +1,4 @@
+int s,sumOfMultiples(int n, int k) {
+for(n-=n%k;n;n-=k)s+=n;
+return s;
+}
