@@ -1,0 +1,13 @@
+vector<int> v,primeFactors(int n) {
+int d=1;
+while(d++,n-1)
+//{
+  while(n%d<1)
+  {
+n/=d;
+v.push_back(d);
+}
+  //d++;    
+//}
+return v;
+}
