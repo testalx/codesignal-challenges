@@ -1,0 +1,9 @@
+int i,j,differentSubstringsTrie(auto s) {
+set<string>S;
+
+for(;i<size(s);i++)   //positions in s
+    for(j=0;++j<16;)    //size of the substring   
+      S.insert(s.substr(i,j));     //j<16 works because substr takes all chars
+
+return size(S);
+}
