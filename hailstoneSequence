@@ -1,0 +1,5 @@
+int k, hailstoneSequence(int n) {
+for(;n>1;k++)
+n=n&1?3*n+1:n/2;
+return k;
+}
