@@ -1,0 +1,6 @@
+int i, j, isDiagonalMatrix(auto a) {
+for(;i<size(a);i++) 
+for(j=0;j<size(a[0]);j++)
+ if(a[i][j] && i-j) return 0;
+return 1;
+}
