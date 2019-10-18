@@ -1,0 +1,9 @@
+auto knapsackLight2(int x, int y, int n) {
+return n<x+y?
+    x>n? 
+        y>n?"none":
+            "second":
+        y>n?"first":
+            "either":
+    "both";
+}
