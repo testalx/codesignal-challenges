@@ -1,0 +1,16 @@
+std::vector<int> easyAssignmentProblem(std::vector<std::vector<int>> a) {
+vector<int>v(2,1);
+int t1,t2;
+if(a[0][0]+a[1][1]>=a[1][0]+a[0][1])
+    v[1]=2;
+else v[0]=2;
+//cout<<a[0][0]<<' '<<a[0][1]<<'\n';
+//cout<<a[1][0]<<' '<<a[1][1]<<'\n';
+return v;
+}
+
+/* foarte interesant cum se poate apela constructorul pt vector
+auto easyAssignmentProblem(auto s) {
+    return s[0][0] + s[1][1] > s[0][1] + s[1][0] ? vector({1, 2}) : vector({2, 1});
+}
+*/
