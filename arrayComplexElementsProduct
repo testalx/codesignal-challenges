@@ -1,0 +1,13 @@
+int x=1,y,i,a,b;
+//(x,y) is initially the complex number 1 (1+0*i)
+auto arrayComplexElementsProduct(auto R, auto I) {
+//x=a[0],y=b[0];
+for(;i<size(R);)   //se putea si for(int x:R), iar i-ul crestea separat
+//{
+    a=x*R[i]-y*I[i],
+    b=x*I[i]+y*R[i++],    //ajungeau 3 variabile ca la fibo
+    x=a,
+    y=b;
+//}
+return vector{x,y};  //se putea direct return {x,y}
+}
