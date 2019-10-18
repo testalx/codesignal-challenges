@@ -1,0 +1,11 @@
+int k,graphEdges(auto a) {
+/*for(;i<(n=size(a));i++)
+    for(j=0;j<n;j++)
+        k+=a[i][j];
+return k/2;
+*/
+for(vector<bool>v:a)
+    for(int x:v)
+        k+=x;
+return k/2;
+}
