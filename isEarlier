@@ -1,0 +1,3 @@
+int isEarlier(auto a, auto b) {
+return a[0]*60+a[1]<b[0]*60+b[1];
+}
