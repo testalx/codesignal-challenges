@@ -1,0 +1,18 @@
+/*
+#define R(...) return __VA_ARGS__
+string angleType(int x) {
+if(x<90) R ("acute");
+if(x==90) R ("right");
+if(x<180) R ("obtuse");
+R("straight");
+}
+*/
+string angleType(int x) {
+if(x<90) return "acute";
+if(x-90) 
+return "obtuse";
+//if(x<180) 
+return "right";
+
+//return "straight";  //ha ha ha lipseste
+}
