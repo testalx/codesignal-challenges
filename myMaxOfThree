@@ -1,0 +1,7 @@
+int myMaxOfThree(int a, int b, int c) {
+/*m=a;
+m=m>b?:b;
+return m>c?m:c;
+*/
+return max(a,max(b,c));
+}
