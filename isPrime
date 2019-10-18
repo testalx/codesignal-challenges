@@ -1,0 +1,5 @@
+int x=2,isPrime(int n) {
+for(;x<n;)
+    if(n%x++==0) return 0;
+return 1;
+}
