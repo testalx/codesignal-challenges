@@ -1,0 +1,10 @@
+int i,kthDivisor(int n, int k) {
+
+    while(i<n&&k)
+    //{ 
+    n%++i?:k--;
+      //if(!k) break;
+      //}
+return k? - 1:i;
+
+}
