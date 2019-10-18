@@ -1,0 +1,8 @@
+int countLineColorings(int p, int n) {
+/*
+for(int x=n;p>1;p--)
+    x*=n-1;
+return x;
+*/
+return n*pow(n-1,p-1);
+}
