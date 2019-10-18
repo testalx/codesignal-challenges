@@ -1,0 +1,24 @@
+int i,s,sumOfDivisors(int n) {
+for(;++i<=sqrt(n);)
+   
+/* 91   
+{
+    
+if(n%i==0)
+    {
+        //cout<<"\nn="<<n<<" i="<<i;
+        s+=i;
+       // cout<<"  s becomes "<<s;
+        if(n/i!=i)
+        s+=n/i;
+        //cout<<"  s becomes "<<s;
+        
+
+    }
+}
+*/
+
+//82
+n%i?:(s+=i,n/i==i?:s+=n/i);
+return s;
+}
