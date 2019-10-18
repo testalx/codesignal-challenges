@@ -1,0 +1,14 @@
+vector<int> a,directionOfReading(auto v) {
+int N=v.size(),n;
+while(N--)
+{ n=0;
+  for(int &x:v)
+    { 
+      n=n*10+x%10;
+      x/=10;
+    }
+ a.insert(begin(a),n);
+
+}
+return a;
+}
