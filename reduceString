@@ -1,0 +1,7 @@
+auto reduceString(auto s) {
+
+while(size(s)&&s[0]==*(end(s)-1))
+    s=s.substr(1,size(s)-2);
+return s;
+
+}
