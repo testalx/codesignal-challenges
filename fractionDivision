@@ -1,0 +1,6 @@
+//am imprumutat oleak de dincolo
+
+auto fractionDivision(auto a, auto b) {
+    int x=a[0]*b[1], y=a[1]*b[0], g=gcd(x,y);
+    return a = {x/g,y/g};
+}
