@@ -1,0 +1,9 @@
+int firstMultiple2(auto v, int x) {
+while(1)
+{
+    for(int i:v)
+        if(x%i==0) return x;
+    x++;
+}
+
+}
