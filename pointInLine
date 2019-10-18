@@ -1,0 +1,3 @@
+int pointInLine(auto p, auto v) {
+return p[0]*v[0]+p[1]*v[1]==-v[2];
+}
