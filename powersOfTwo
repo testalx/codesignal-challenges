@@ -1,0 +1,12 @@
+
+vector<int> v,powersOfTwo(int n) {
+//vector<int>v;
+while(n)
+{int d=1;
+while(2*d<=n) d*=2;
+   
+    v.insert(v.begin(),d);
+    n-=d;
+}
+return v;
+}
