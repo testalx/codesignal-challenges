@@ -1,0 +1,7 @@
+int k,divisorsPairs(auto v) {
+for(int x:v)
+    for(int y:v)
+        x==y||x%y&&y%x?: k++;
+        
+return k/2;
+}
