@@ -1,0 +1,8 @@
+string s,fromDecimal(int b, int n) {
+while(n)
+//{   
+s.insert(0,1,n%b+48),
+n/=b;
+//}
+return s;
+}
