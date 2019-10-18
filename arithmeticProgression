@@ -1,0 +1,3 @@
+int arithmeticProgression(int a, int b, int n) {
+return a+(b-a)*--n;
+}
