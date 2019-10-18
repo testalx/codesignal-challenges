@@ -1,0 +1,6 @@
+std::vector<int> inversePermutation(std::vector<int> a) {
+vector<int>v(a.size());
+for(int i=0;i<a.size();i++)
+    v[a[i]-1]=i+1;
+return v;
+}
