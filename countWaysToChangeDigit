@@ -1,0 +1,5 @@
+int k,countWaysToChangeDigit(int n) {
+for(;n;n/=10)
+    k+=9-n%10;
+return k;
+}
