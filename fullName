@@ -1,0 +1,3 @@
+auto fullName(auto a, auto b) {
+return a+" "+b;
+}
