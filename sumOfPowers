@@ -1,0 +1,10 @@
+int p,s,sumOfPowers(int n, int d) {
+
+for(;n;n--)
+
+    for(p=d;n%p<1;p*=d)
+        s++;
+    
+
+return s;
+}
