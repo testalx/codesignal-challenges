@@ -1,0 +1,9 @@
+int k,firstNotDivisible(auto v, int x) {
+while(1)
+{ k=1;
+    for(int i:v)
+        if(x%i==0){k=0;break;}
+    if(k) return x;
+ x++;
+}
+}
