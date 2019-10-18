@@ -1,0 +1,3 @@
+int checkData(auto s) {
+return s.size()==3;
+}
