@@ -1,0 +1,51 @@
+#define F for(  //just to remove 6 characters :))
+string c;
+//eu am facut-o
+auto substitutionCipherDecryption(auto s, auto a, auto b) {
+
+int i=97,j,C,n=size(a);
+
+//make a set of all lowercase letters in the English alphabet
+set<char>S;
+
+F ;i<123;)
+    S.insert(i++);
+//remove the letters from the second string, they appear in the ciphertext alphabet on fixed positions
+F int x:b)
+    S.erase(x);
+//could have made it from the beginning so that only the letters not present in b go to the set.
+
+/*
+for(auto it=begin(S);it!=end(S);++it)
+    cout<<*it<<' ';
+cout<<endl;
+*/
+//construct the ciphertext alphabet in the string c
+F i=97;i<123;i++)
+{
+    F j=0;j<n&a[j]!=i;j++);
+//        if(a[j]==i) break;
+   // char C;
+    //if(j<n)
+        C=b[j];
+    //else
+//    {
+    if(j>=n)
+     C=*begin(S),
+     S.erase(begin(S));   
+  //  }
+    c+=C;
+ }
+
+//cout<<c;
+
+//now we replace each character in the first string with its plaintext correspondent
+F char &m:s)
+{
+ F i=0;m!=c[i++];);
+ //cout<<m<<' '<<c[i]<<endl;
+    
+   m=96+i;   //i is one step further than the correct position in the ciphertext alphabet
+}
+return s;
+}
