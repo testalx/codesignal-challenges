@@ -1,0 +1,5 @@
+int m,i,k,waterTubes(auto w, auto f) {
+for(;i<size(w);)
+    k=w[i]/f[i],w[i]%f[i++]==0?:k++,m=max(m,k);
+return m;
+}
