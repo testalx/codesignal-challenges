@@ -1,0 +1,7 @@
+int x,p=1,swapNeighbouringDigits(int n) {
+while(n)
+//{
+ x+=n%10*p*10+n/10%10*p, p*=100, n/=100;   
+//}
+return x;
+}
