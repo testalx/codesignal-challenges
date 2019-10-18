@@ -1,0 +1,7 @@
+int x,maximalEven(auto v) {
+for(int i:v)
+   //cout<<i;
+   //if(i%2==0&&i>x) x=i;
+    x=i<x|i&1?x:i;
+return x;
+}
