@@ -1,0 +1,11 @@
+int i,a;
+auto extractEachKth(auto v, int k) {
+//if(k==1) return vector<int>();
+for(;++i<size(v);i++)
+    if(++a==k) 
+    {
+        v.erase(begin(v)+i);
+        a=1;
+    }
+return k-1?v:vector<int>();
+}
