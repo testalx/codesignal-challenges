@@ -1,0 +1,7 @@
+auto splitAddress(auto s) {
+int p=s.find(58,0)+3,q=s.find_last_of(47,35);    //':'=58    '/'=47
+//cout<<q;
+vector<string> v={s.substr(0,p-3),s.substr(p,s.find(46,0)-p)};   //'.'=46
+if (s[q-1]-47) v.push_back(s.substr(q+1));
+return v;
+}
