@@ -1,0 +1,6 @@
+int a,k,isSumOfConsecutive(int n) {
+for(;a<n/2;a++)
+    for(k=0;k<sqrt(n);)
+        if(a*k+k*++k/2==n) return 1;
+return 0;
+}
