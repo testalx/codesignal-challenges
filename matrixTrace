@@ -1,0 +1,5 @@
+int i,s,matrixTrace(auto a) {
+for(;i<size(a);)
+    s+=a[i][i++];
+return s;
+}
