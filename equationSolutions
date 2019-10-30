@@ -1,0 +1,7 @@
+int b,k,a,equationSolutions(int l, int r) {
+for(a=l;a<=r;a++)
+    for(b=l;b<=r;)
+        k+=a*a*a==b*b++;
+
+return k;
+}
