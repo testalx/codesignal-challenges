@@ -1,0 +1,23 @@
+/*104
+int i;
+auto htmlEndTagByStartTag(auto S) {
+string s="</";
+for(;S[++i]-32&&S[i]&&S[i]-62;)
+    s+=S[i];
+s+=62;
+return s;
+}
+*/
+/*95
+auto htmlEndTagByStartTag(auto s)
+{
+ s.insert(1,"/");
+int a=s.find(32);
+//cout<<a;
+return a>0?s.substr(0,a)+">":s; 
+}
+*/
+//84
+auto htmlEndTagByStartTag(auto s) {
+    return "</"+s.substr(1,s.find_first_of("> ")-1)+">";
+}
