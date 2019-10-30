@@ -1,0 +1,15 @@
+int i,j,N,k,deleteDigit(int n) {
+vector<int>v,a;
+//int i,nmax=0;
+if(n<10) return 0;
+for(;n;n/=10)
+  v.push_back(n%10);
+for(;i<size(v);i++)
+{ a=v;k=0;
+  a.erase(begin(a)+i);
+  for(j=size(a)-1;j>=0;)
+    k=k*10+a[j--];
+  N>k?:N=k;
+}
+return N;
+}
