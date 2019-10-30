@@ -1,0 +1,16 @@
+#define f(x,y,z) stoi(x.substr(y,z))
+int m,parkingCost(auto s, auto t) {
+//int a,b,c,d,S;
+//a=f(s,0,2);
+//b=f(s,3,2);
+//c=f(t,0,2);
+//d=f(t,3,2);
+m=(f(t,0,2)-f(s,0,2))*60+f(t,3,2)-f(s,3,2);
+
+//cout<<a<<" "<<b<<" "<<c<<" "<<d<<" "<<m;
+m%10<1?:m+=(10-m%10);
+//for(;m>120;m-=10)S+=2;
+//for(;m>30;m-=10) S++;
+//return S;
+return m<121?m<31?0:(m-30)/10: (m-120)/5+9;
+}
