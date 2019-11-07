@@ -1,0 +1,6 @@
+int i,a,b;
+auto alternatingSums(auto v) {
+for(int x:v)
+i++&1?b+=x:a+=x;
+return vector{a,b};
+}
