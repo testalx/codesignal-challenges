@@ -1,0 +1,10 @@
+int p=1,x,y,a,digitDistanceNumber(int n) {
+for(y=n%10,n/=10;n;n/=10)
+//{
+    x=abs(n%10-y),
+    a+=x*p,
+    p*=10,
+    y=n%10;
+//}
+return a;
+}
