@@ -1,0 +1,37 @@
+#define F x.find(
+#define G y.erase(
+
+void f(auto x, string &y)
+{
+y=x;
+    if(F "a ")+1)
+        G 0,2);
+   
+    if(F "an ")+1|| F "to ")+1)
+        G 0,3);
+    
+    if(F "the ")+1)
+        G 0,4);
+}
+
+
+int i,unusualDictionary(auto v) {
+string a,b,c,d;
+for(;i<size(v)-1;)
+{
+    a=v[i];b=v[++i];
+    f(a,c);f(b,d);
+
+    if(c!=d)
+  //  {        cout<<"\ndifferent";
+        if(c>d) return 0;
+        else;
+ // }
+    else 
+   // {        cout<<"\ndiferite";
+        if((a==d||b==c)&&(a>b)) return 0;        
+        else if (a>b) return 0;
+  //  }
+}
+return 1;
+}
