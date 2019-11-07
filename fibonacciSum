@@ -1,0 +1,15 @@
+vector<int> f,v,fibonacciSum(int n) {
+f={1,1};
+int k=1;
+for(;f[k]<n;k++)
+    f.push_back(f[k]+f[k-1]);
+//cout<<k;
+for(;n;)
+{
+    for(;f[k--]>n;);
+// k++;
+ n-=f[++k];
+v.insert(begin(v),f[k]);
+}
+return v;
+}
