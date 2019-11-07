@@ -1,0 +1,6 @@
+int variableName(auto s) {
+for(int x:s)
+    if(!islower(x)&!isupper(x)&!isdigit(x)&x!=95)
+        return 0;
+return !isdigit(s[0]);
+}
