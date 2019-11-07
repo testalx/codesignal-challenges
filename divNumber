@@ -1,0 +1,9 @@
+int s,d,n,divNumber(int k, int l, int r) {
+for(;l<=r;l++)
+{
+ for(n=0,d=1;d<=l;)
+    l%d++?:n++;
+ s+=n==k;   
+}
+return s;
+}
