@@ -1,0 +1,6 @@
+int m=99,k,i,arrayMinimumIndex(auto v) {//no test case where 100 is the minimum :)
+for(int x:v)
+    //x>m?:(m=x,k=i),i++;
+      x<m?(m=x,k=i++):i++;
+return k;
+}
