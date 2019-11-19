@@ -1,0 +1,8 @@
+int k,depositProfit(int d, int r, int t) {
+//int k=0;
+float x=d;
+while(x<t-1e-7)
+  x+=x*r/100,
+k++;
+return k;
+}
