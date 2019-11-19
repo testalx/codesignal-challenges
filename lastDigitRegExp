@@ -1,0 +1,5 @@
+int c,lastDigitRegExp(auto s) {
+for(int x:s)
+    c=x-48<9?x:c;
+return c;
+}
