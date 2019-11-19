@@ -1,0 +1,5 @@
+vector<int> v,threeAndFour(int n) {
+for(int i=0;i<n;i+=12)
+    v.push_back(i);
+return v;
+}
