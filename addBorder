@@ -1,0 +1,12 @@
+auto addBorder(auto s) {
+
+for(auto &k:s)
+//{
+    k.insert(begin(k),'*'),
+    k+="*";
+//}
+string a(s[0].size(),'*');
+s.insert(begin(s),a);
+s.push_back(a);
+return s;
+}
